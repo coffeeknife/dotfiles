@@ -1,2 +1,16 @@
 [alacritty.files]
 "alacritty/alacritty.toml" = "~/.config/alacritty/alacritty.toml"
+"alacritty/catppuccin-mocha.toml" = "~/.config/alacritty/catppuccin-mocha.toml"
+
+[fuzzel.files]
+"fuzzel/fuzzel.ini" = "~/.config/fuzzel/fuzzel.ini"
+
+[hyfetch.files]
+"neofetch/hyfetch.json" = "~/.config/hyfetch.json"
+"neofetch/config.conf" = "~/.config/neofetch/config.conf"
+
+[wlr-keybinds.files]
+"wlr-which-key/config.yaml" = "~/.config/wlr-which-key/config.yaml"
+
+[sway.files]
+"sway/config" = "~/.config/sway/config"
