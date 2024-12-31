@@ -18,6 +18,9 @@
         "battery",
         "clock"
     ],
+    "sway/window": {
+        "max-length": 50
+    },
     "sway/scratchpad": {
         "format": "{icon} {count}",
         "show-empty": false,
