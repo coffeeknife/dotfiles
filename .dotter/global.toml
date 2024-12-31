@@ -1,3 +1,8 @@
+[helpers]
+
+[settings]
+default_target_type = "symbolic"
+
 [alacritty.files]
 "alacritty/alacritty.toml" = "~/.config/alacritty/alacritty.toml"
 "alacritty/catppuccin-mocha.toml" = "~/.config/alacritty/catppuccin-mocha.toml"
@@ -14,3 +19,8 @@
 
 [sway.files]
 "sway/config" = "~/.config/sway/config"
+
+[vesktop.files]
+"vesktop/settings.json" = "~/.config/vesktop/settings.json"
+"vesktop/settings" = {target = "~/.config/vesktop/settings", type = "symbolic", recurse = false}
+"vesktop/themes" = {target = "~/.config/vesktop/themes", type = "symbolic", recurse = false}
