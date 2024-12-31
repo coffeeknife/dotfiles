@@ -1,0 +1,16 @@
+# Theme
+font: JetBrainsMono Nerd Font 12
+separator: " ➜ "
+corner_r: 10
+border_width: 2
+
+# Anchor
+anchor: center
+
+menu:
+  "Return":
+    desc: Terminal
+    cmd: alacritty
+  "d":
+    desc: Application Launcher
+    cmd: fuzzel
