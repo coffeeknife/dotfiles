@@ -25,6 +25,7 @@ depends = ["sway-waybar", "scripts"]
 
 [sway.files]
 "sway/config" = "~/.config/sway/config"
+"sway/catppuccin-mocha" = "~/.config/sway/catppuccin-mocha"
 
 [sway-waybar.files]
 "sway/waybar/config.jsonc" = "~/.config/waybar/config.jsonc"
