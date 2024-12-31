@@ -17,8 +17,19 @@ default_target_type = "symbolic"
 [wlr-keybinds.files]
 "wlr-which-key/config.yaml" = "~/.config/wlr-which-key/config.yaml"
 
+[scripts.files]
+"scripts" = {"target" = "~/.config/scripts", "type"="symbolic", "recurse"=false}
+
+[sway]
+depends = ["sway-waybar", "scripts"]
+
 [sway.files]
 "sway/config" = "~/.config/sway/config"
+
+[sway-waybar.files]
+"sway/waybar/config.jsonc" = "~/.config/waybar/config.jsonc"
+"sway/waybar/style.css" = "~/.config/waybar/style.css"
+"sway/waybar/mocha.css" = "~/.config/waybar/mocha.css"
 
 [vesktop.files]
 "vesktop/settings.json" = "~/.config/vesktop/settings.json"

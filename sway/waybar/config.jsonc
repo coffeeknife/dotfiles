@@ -1,0 +1,85 @@
+{
+    "layer": "top",
+    "position": "top",
+    "passthrough": "true", // in case
+    "modules-left": [
+        "custom/osmenu",
+        "custom/hostname",
+        "sway/workspaces",
+        "sway/scratchpad"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "tray",
+        "bluetooth",
+        "network",
+        "battery",
+        "clock"
+    ],
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", "\uf2d2"],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+
+    "clock": {
+        "format": "\udb82\udd54 {:%H:%M}",
+        "tooltip-format": "{:%Y-%m-%d}\n{calendar}"
+    },
+
+    "battery": {
+        "interval": 1,
+        "format": "{icon} {capacity}%",
+        "full-at": 90,
+        "format-charging": "\udb80\udc84 {capacity}%",
+        "format-plugged": "\uf1e6 {capacity}%",
+        "format-icons": ["\udb80\udc83", "\udb80\udc7a", "\udb80\udc7b", "\udb80\udc7c", "\udb80\udc7d", "\udb80\udc7e", "\udb80\udc7f", "\udb80\udc80", "\udb80\udc81", "\udb80\udc82", "\udb80\udc79"],
+        "states": {
+            "full": 90,
+            "warning": 30,
+            "critical": 15
+        }
+    },
+    "sway/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": "\ueabc",
+            "focused": "\uea71"
+        }
+    },
+    "network": {
+        "format-wifi": "{icon}",
+        "format-icons": ["\udb82\udd1f","\udb82\udd22","\udb82\udd25","\udb82\udd28"],
+        "format-disconnected": "\udb82\udd2f",
+        "format-disabled": "\udb82\udd2e",
+        "format-ethernet": "\uef09",
+        "tooltip-format-wifi": "{essid} - {ipaddr}/{cidr}\nSignal Strength: {signaldBm}dBm",
+        "on-click": "alacritty -e nmtui",
+        "on-right-click": "wifi toggle"
+    },
+    "bluetooth": {
+        "format": "\udb80\udcaf",
+        "format-connected": "\udb80\udcb1",
+        "format-disabled": "\udb80\udcb2",
+        "tooltip-format": "{controller_alias}\t{status}",
+        "tooltip-format-connected": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_battery_percentage}%",
+        "on-right-click": "bluetooth toggle",
+        "on-click": "alacritty -e bluetui"
+    },
+
+    "custom/osmenu": {
+        "format": "\udb82\udcc7",
+        "tooltip-format": "btw"
+    },
+
+    "custom/hostname": {
+        "interval": "once",
+        "exec": "hostnamectl -j | jq '(.OperatingSystemPrettyName) + \" \" + (.KernelRelease)' | tr -d '\"'",
+        "format": "{}"
+    }
+}
