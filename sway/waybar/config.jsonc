@@ -76,8 +76,9 @@
     },
 
     "custom/osmenu": {
-        "format": "\udb82\udcc7",
-        "tooltip-format": "btw"
+        "format": "{}",
+        // i am extremely unlikely to use anything other than gentoo and arch currently
+        "exec": "[ \"$(lsb-release -is)\" == \"Gentoo\" ] && echo \"\udb82\udce8\" || echo \"\udb82\udcc7\""
     },
 
     "custom/hostname": {
