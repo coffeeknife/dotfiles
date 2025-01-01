@@ -82,7 +82,7 @@
 
     "custom/hostname": {
         "interval": "once",
-        "exec": "hostnamectl -j | jq '(.OperatingSystemPrettyName) + \" \" + (.KernelRelease)' | tr -d '\"'",
+        "exec": "echo \"$(lsb-release -is) $(uname -r)\"",
         "format": "{}"
     }
 }
