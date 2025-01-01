@@ -20,8 +20,11 @@ default_target_type = "symbolic"
 [scripts.files]
 "scripts" = {"target" = "~/.config/scripts", "type"="symbolic", "recurse"=false}
 
+[mako.files]
+"mako/config" = "~/.config/mako/config"
+
 [sway]
-depends = ["sway-waybar", "scripts"]
+depends = ["sway-waybar", "scripts","mako"]
 
 [sway.files]
 "sway/config" = "~/.config/sway/config"

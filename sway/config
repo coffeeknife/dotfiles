@@ -71,7 +71,7 @@ corner_radius 10
 gaps inner 10
 
 font "JetBrains Mono" Medium 10
-client.focused $base $maroon $text
+client.focused $base $surface0 $text
 client.unfocused $base $crust $text
 client.urgent $base $red $text
 
