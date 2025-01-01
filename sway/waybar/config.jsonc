@@ -16,7 +16,8 @@
         "bluetooth",
         "network",
         "battery",
-        "clock"
+        "clock",
+        "custom/power"
     ],
     "sway/window": {
         "max-length": 50
@@ -86,5 +87,10 @@
         "interval": "once",
         "exec": "echo \"$(lsb-release -is) $(uname -r)\"",
         "format": "{}"
+    },
+
+    "custom/power": {
+        "format": "\u23fb",
+        "on-click": "wlogout"
     }
 }

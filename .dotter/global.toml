@@ -24,11 +24,14 @@ default_target_type = "symbolic"
 "mako/config" = "~/.config/mako/config"
 
 [sway]
-depends = ["sway-waybar", "scripts","mako"]
+depends = ["sway-waybar", "scripts","mako", "wlogout"]
 
 [sway.files]
 "sway/config" = "~/.config/sway/config"
 "sway/catppuccin-mocha" = "~/.config/sway/catppuccin-mocha"
+
+[wlogout.files]
+"wlogout/layout" = "~/.config/wlogout/layout"
 
 [sway-waybar.files]
 "sway/waybar/config.jsonc" = "~/.config/waybar/config.jsonc"
