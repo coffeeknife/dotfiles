@@ -79,7 +79,7 @@ client.urgent $base $red $text
 # Basics:
 #
     # Shortcut Launcher
-    bindsym --release Super_L exec wlr-which-key
+    # bindsym --release Super_L exec wlr-which-key
 
     bindsym $mod+Return exec $term
     bindsym $mod+d exec $menu
