@@ -58,8 +58,9 @@
         "format-wifi": "{icon}",
         "format-icons": ["\udb82\udd1f","\udb82\udd22","\udb82\udd25","\udb82\udd28"],
         "format-disconnected": "\udb82\udd2f",
-        "format-disabled": "\udb82\udd2e",
-        "format-ethernet": "\uef09",
+        "format-disabled": "\udb82\ude8e",
+        "format-ethernet": "\udb81\udf89",
+        "tooltip-format-ethernet": "{ifname}\t{ipaddr}/{cidr}",
         "tooltip-format-wifi": "{essid} - {ipaddr}/{cidr}\nSignal Strength: {signaldBm}dBm",
         "on-click": "alacritty -e nmtui",
         "on-right-click": "wifi toggle"
