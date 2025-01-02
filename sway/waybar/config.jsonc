@@ -95,7 +95,7 @@
 
     "custom/hostname": {
         "interval": "once",
-        "exec": "echo \"$(lsb-release -is) $(uname -r)\"",
+        "exec": "echo \"$(lsb_release -is) $(uname -r)\"",
         "format": "{}"
     },
 
