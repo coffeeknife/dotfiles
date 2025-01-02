@@ -10,6 +10,18 @@ exec {{pipewire}}
 exec mako
 exec dbus-update-activation-environment DISPLAY
 
+# gtk config
+set $gnomeschema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnomeschema gtk-theme 'Adwaita-dark'
+    gsettings set $gnomeschema icon-theme 'FairyWren_Dark'
+    gsettings set $gnomeschema cursor-theme 'miku-cursor-linux'
+    gsettings set $gnomeschema cursor-theme-size 24
+    gsettings set $gnomeschema font-name 'JetBrains Mono'
+}
+
+seat seat0 xcursor_theme miku-cursor-linux 24
+
 # startup scripts
 exec dex /home/robin/.config/autostart/*
 
