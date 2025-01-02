@@ -6,17 +6,15 @@
 
 include catppuccin-mocha
 
-exec {{pipewire}}
 exec mako
-exec dbus-update-activation-environment DISPLAY
+exec dbus-update-activation-environment WAYLAND_DISPLAY DISPLAY SWAYSOCK I3SOCK XCURSOR_SIZE XCURSOR_THEME
 
 # gtk config
 set $gnomeschema org.gnome.desktop.interface
 exec_always {
-    gsettings set $gnomeschema gtk-theme 'Adwaita-dark'
+    gsettings set $gnomeschema gtk-theme 'catppuccin-mocha-maroon-standard+default'
     gsettings set $gnomeschema icon-theme 'FairyWren_Dark'
     gsettings set $gnomeschema cursor-theme 'miku-cursor-linux'
-    gsettings set $gnomeschema cursor-theme-size 24
     gsettings set $gnomeschema font-name 'JetBrains Mono'
 }
 
@@ -284,6 +282,8 @@ bar {
     position top
     swaybar_command waybar
 }
+
+exec_always $HOME/.config/scripts/pipewire-start.sh
 
 blur enable
 corner_radius 10
