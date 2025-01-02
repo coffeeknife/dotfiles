@@ -12,7 +12,7 @@ default_target_type = "symbolic"
 
 [hyfetch.files]
 "neofetch/hyfetch.json" = "~/.config/hyfetch.json"
-"neofetch/config.conf" = "~/.config/neofetch/config.conf"
+"neofetch/config.jsonc" = "~/.config/fastfetch/config.jsonc"
 
 [wlr-keybinds.files]
 "wlr-which-key/config.yaml" = "~/.config/wlr-which-key/config.yaml"
