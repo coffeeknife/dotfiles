@@ -16,6 +16,7 @@
         "bluetooth",
         "network",
         "battery",
+        "wireplumber",
         "clock",
         "custom/power"
     ],
@@ -77,6 +78,15 @@
         "on-click": "alacritty -e bluetui"
     },
 
+    "wireplumber": {
+        "format": "{icon}",
+        "tooltip-format": "{volume}%",
+        "format-muted": "\ueee8",
+        "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+        "scroll-step": "10",
+        "format-icons": ["\uf026","\uf027", "\uf027", "\uf028", "\uf028"]
+    },
+
     "custom/osmenu": {
         "format": "{}",
         // i am extremely unlikely to use anything other than gentoo and arch currently
@@ -91,6 +101,7 @@
 
     "custom/power": {
         "format": "\u23fb",
-        "on-click": "wlogout"
+        "on-click": "wlogout",
+        "tooltip-format": "Logout/Power Off"
     }
 }

@@ -6,8 +6,12 @@
 
 include catppuccin-mocha
 
+exec {{pipewire}}
 exec mako
 exec dbus-update-activation-environment DISPLAY
+
+# startup scripts
+exec dex /home/robin/.config/autostart/*
 
 ### Variables
 #
@@ -87,6 +91,8 @@ for_window [app_id = "floating_update"] floating enable, resize set width 1000px
 for_window [class = "(?i)pinentry"] floating enable
 for_window [title = "Administrator privileges required"] floating enable
 
+for_window [app_id = "pavucontrol"] floating enable
+
 for_window [title = "About Mozilla Firefox"] floating enable
 for_window [window_role = "About"] floating enable
 for_window [app_id="firefox" title="Library"] floating enable, border pixel 1, sticky enable
@@ -128,6 +134,10 @@ for_window [title="^Steam Keyboard$"] floating enable
     # idle
     exec swayidle -w timeout 900 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'
 
+    # volume
+    bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_SINK@ toggle
+    bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_SINK@ 5%+
+    bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_SINK@ 5%-
 
     # Screenshot a window
     bindsym $mod+Print exec sway-screenshot -m window

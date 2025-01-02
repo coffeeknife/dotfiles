@@ -37,3 +37,7 @@ window#waybar {
 #custom-osmenu:hover {
   color: @red;
 }
+
+#wireplumber {
+  font-family: "Font Awesome 6 Free";
+}

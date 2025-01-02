@@ -1,8 +1,3 @@
-[helpers]
-
-[settings]
-default_target_type = "symbolic"
-
 [alacritty.files]
 "alacritty/alacritty.toml" = "~/.config/alacritty/alacritty.toml"
 "alacritty/catppuccin-mocha.toml" = "~/.config/alacritty/catppuccin-mocha.toml"
