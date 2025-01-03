@@ -9,5 +9,6 @@
         "en-US",
         "en"
     ],
-    "clickTrayToShowHide": true
+    "clickTrayToShowHide": true,
+    "splashTheming": true
 }

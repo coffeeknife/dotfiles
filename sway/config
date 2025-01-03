@@ -16,6 +16,7 @@ exec_always {
     gsettings set $gnomeschema icon-theme 'FairyWren_Dark'
     gsettings set $gnomeschema cursor-theme 'miku-cursor-linux'
     gsettings set $gnomeschema font-name 'JetBrains Mono'
+    gsettings set $gnomeschema color-scheme 'prefer-dark'
 }
 
 seat seat0 xcursor_theme miku-cursor-linux 24

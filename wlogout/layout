@@ -6,7 +6,7 @@
 }
 {
     "label" : "hibernate",
-    "action" : "loginctl hibernate",
+    "action" : "{{loginctl}} hibernate",
     "text" : "Hibernate",
     "keybind" : "h"
 }
@@ -18,19 +18,19 @@
 }
 {
     "label" : "shutdown",
-    "action" : "loginctl poweroff",
+    "action" : "{{loginctl}} poweroff",
     "text" : "Shutdown",
     "keybind" : "s"
 }
 {
     "label" : "suspend",
-    "action" : "loginctl suspend",
+    "action" : "{{loginctl}} suspend",
     "text" : "Suspend",
     "keybind" : "u"
 }
 {
     "label" : "reboot",
-    "action" : "loginctl reboot",
+    "action" : "{{loginctl}} reboot",
     "text" : "Reboot",
     "keybind" : "r"
 }

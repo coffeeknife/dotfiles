@@ -15,6 +15,7 @@
         "tray",
         "bluetooth",
         "network",
+        "custom/vpn",
         "battery",
         "wireplumber",
         "clock",
@@ -32,7 +33,7 @@
     },
 
     "clock": {
-        "format": "\udb82\udd54 {:%H:%M}",
+        "format": "{:%I:%M %p}",
         "tooltip-format": "{:%Y-%m-%d}\n{calendar}"
     },
 
@@ -90,7 +91,11 @@
     "custom/osmenu": {
         "format": "{}",
         // i am extremely unlikely to use anything other than gentoo and arch currently
-        "exec": "[ \"$(lsb-release -is)\" == \"Gentoo\" ] && echo \"\udb82\udce8\" || echo \"\udb82\udcc7\""
+        "exec": "[ \"$(lsb_release -is)\" == \"Gentoo\" ] && echo \"\udb82\udce8\" || echo \"\udb82\udcc7\""
+    },
+
+    "custom/vpn": {
+        "format": "\udb82\udd9e"
     },
 
     "custom/hostname": {
