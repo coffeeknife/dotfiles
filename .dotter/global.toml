@@ -27,6 +27,8 @@ depends = ["sway-waybar", "scripts","mako", "wlogout"]
 
 [wlogout.files]
 "wlogout/layout" = "~/.config/wlogout/layout"
+"wlogout/style.css" = "~/.config/wlogout/style.css"
+"wlogout/icons" = "~/.config/wlogout/icons"
 
 [sway-waybar.files]
 "sway/waybar/config.jsonc" = "~/.config/waybar/config.jsonc"
