@@ -39,6 +39,10 @@ set $term alacritty
 set $menu fuzzel
 set $shortcuts wlr-which-key
 
+set $lock swaylock --ignore-empty-password --daemonize --indicator-caps-lock --indicator --clock --timestr '󰥔 %H:%M:%S' --datestr '󰃭 %b-%d-%Y' --show-failed-attempts --indicator-idle-visible
+
+bindswitch --reload --locked lid:on exec $lock 
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
