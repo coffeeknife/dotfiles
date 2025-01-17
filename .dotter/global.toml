@@ -35,7 +35,6 @@ depends = ["sway-waybar", "scripts","mako", "wlogout"]
 "sway/waybar/config.jsonc" = "~/.config/waybar/config.jsonc"
 "sway/waybar/style.css" = "~/.config/waybar/style.css"
 "sway/waybar/mocha.css" = "~/.config/waybar/mocha.css"
-"sway/waybar/wireguard-manager" = "~/.config/waybar/wireguard-manager"
 
 [vesktop.files]
 "vesktop/settings.json" = "~/.config/vesktop/settings.json"

@@ -15,6 +15,7 @@
         "tray",
         "bluetooth",
         "network",
+        "custom/vpn",
         "battery",
         "wireplumber",
         "clock",
@@ -103,5 +104,13 @@
         "format": "\u23fb",
         "on-click": "wlogout",
         "tooltip-format": "Logout/Power Off"
+    },
+    
+    "custom/vpn": {
+        "format": "{}",
+        "exec": "~/.config/scripts/wireguard.sh wg0",
+        "on-click": "~/.config/scripts/wireguard.sh wg0 toggle",
+        "interval": 1,
+        "hide-empty-text": false
     }
 }
