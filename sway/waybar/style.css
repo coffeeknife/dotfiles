@@ -41,3 +41,11 @@ window#waybar {
 #wireplumber {
   font-family: "Font Awesome 6 Free";
 }
+
+.active {
+  color: @green;
+}
+
+.inactive {
+  color: @red;
+}
