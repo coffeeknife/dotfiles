@@ -15,7 +15,6 @@
         "tray",
         "bluetooth",
         "network",
-        "custom/wireguard-manager",
         "battery",
         "wireplumber",
         "clock",
@@ -92,19 +91,6 @@
         "format": "{}",
         // i am extremely unlikely to use anything other than gentoo and arch currently
         "exec": "[ \"$(lsb_release -is)\" == \"Gentoo\" ] && echo \"\udb82\udce8\" || echo \"\udb82\udcc7\""
-    },
-
-    "custom/wireguard-manager": {
-        "exec": "exec ~/.config/waybar/wireguard-manager/wireguard-manager.sh -s",
-        "format": "{icon}",
-        "format-icons": {
-            "connected": "<span color=\"#50fa7b\">\udb81\udc98</span>",
-            "disconnected": "<span color=\"#ff5555\">\udb82\udd9e</span>"
-        },
-        "interval": "once",
-        "on-click": "~/.config/waybar/wireguard-manager/wireguard-manager.sh -t && pkill -SIGRTMIN+1 waybar",
-        "return-type": "json",
-        "signal": 1
     },
 
     "custom/hostname": {
